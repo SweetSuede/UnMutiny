@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnMutiny</title>
+    <link rel="stylesheet" href="./Unmutiny_style.css" />
+    <!-- Meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center flex items-center justify-center px-6"
+        style="background-image: url('./herosection.png');">
+        <div class="bg-black bg-opacity-50 p-10 rounded-xl text-center max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white">Welcome to UnMutiny</h1>
+            <p class="text-lg md:text-xl text-gray-200 mt-4">
+                We are creating a safe place for women in tech to share stories of workplace challenges and recieve
+                personalized AI-generated advice. <br> Unmute and help us build it.
+            </p>
+
+            <!-- <div class="chat-input-container">
+                <textarea class="chat-textarea"
+                    placeholder="What happened? How did it make you feel? What would you like advice on?"
+                    rows="1"></textarea>
+                <button class="send-button" title="Skicka">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+                    </svg>
+                </button>
+            </div>
+
+            <script>
+                const textarea = document.querySelector('.chat-textarea');
+
+                textarea.addEventListener('input', () => {
+                    textarea.style.height = 'auto'; // Återställ höjden
+                    textarea.style.height = textarea.scrollHeight + 'px'; // Sätt till innehållshöjd
+                });
+            </script> -->
+
+            <a href="#story-form"
+                class="mt-6 inline-block bg-red-500 text-white text-lg px-6 py-3 rounded-md shadow-lg hover:bg-red-600 transition">
+                How to help
+            </a>
+        </div>
+    </section>
+
+    <!-- Benefits and USP -->
+    <section class="bg-white py-12">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Why Use UnMutiny?</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+
+                <div class="flex items-start space-x-4">
+                    <!-- Shield Check Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="m9 12 2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Share without fear
+                        </h3>
+                        <p class="text-gray-600">Share without worrying about career blowback. Safely get the support
+                            you deserve.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <!-- Bot Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8V4M8 2h8m1 11h3m-18 0h3m4 0h4m-2 0v4m-8 5h16a1 1 0 0 0 1-1v-6a8 8 0 0 0-16 0v6a1 1 0 0 0 1 1Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Your Personal Wingwoman</h3>
+                        <p class="text-gray-600">Our AI coach gives you tailored, real-talk guidance that actually fits
+                            your career, company, and goals.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <!-- Users Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="8.5" cy="7" r="4" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20 8v6m3-3h-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Wisdom of Many, Powered by AI</h3>
+                        <p class="text-gray-600">Tap into the collective brains of women in tech and AI surfacing proven
+                            strategies
+                            for common challenges.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <!-- Message Circle Check Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <path d="m9 12 2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg"> Troll-Free Space</h3>
+                        <p class="text-gray-600">Moderated to keep conversations real, safe, and supportive—no trolls
+                            allowed.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <!-- Check Circle Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="m9 12 2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Real Steps, Not Just “You Go Girl”</h3>
+                        <p class="text-gray-600">Receive clear, practical next steps, turning shared experiences into
+                            real progress.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <!-- Laptop Icon -->
+                    <div class="w-10 h-10 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current" fill="none" viewBox="0 0 24 24">
+                            <rect width="18" height="12" x="3" y="4" rx="2" ry="2" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 20h20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Built for Tech Women</h3>
+                        <p class="text-gray-600">We get it. Bias in meetings, weird promotion hurdles, unsolicited
+                            comments — we’ve trained our platform for exactly these realities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Story and Feedback Submission Form -->
+    <section id="story-form" class="container mx-auto my-20 px-6">
+        <h2 class="text-3xl font-bold text-center">Unmute Your Story</h2>
+        <p class="text-center text-gray-600 mt-2">
+            Share your story and feedback to help us develop UnMutiny. <br> Be the
+            change you want to see. </p>
+
+        <form action="https://formspree.io/f/abc123" method="POST"
+            class="max-w-xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+
+            <label class="block text-lg font-semibold">Your Name</label>
+            <input type="text" name="name"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+                placeholder="Enter your name, real or not" />
+
+            <label class="block mt-4 text-lg font-semibold">Your Email</label>
+            <input type="text" name="email"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+                placeholder="So we can get in touch. No spam, promise!" />
+
+            <label class="block mt-6 text-lg font-semibold">Your Story</label>
+            <textarea name="story" rows="5"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+                placeholder="What happened? How did it make you feel? What advice would you like to have?"></textarea>
+
+            <label class="block mt-6 text-lg font-semibold">What do YOU need?</label>
+            <textarea name="feedback" rows="5"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+                placeholder="How would you use UnMutiny?"></textarea>
+
+            <!-- Roll (fritextfält) -->
+            <label class="block text-lg font-semibold mt-6">Role</label>
+            <input type="text" name="role"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+                placeholder="Developer, UX-designer, QA, Team Leader, Senior Manager..." />
+
+            <!-- Erfarenhet antal år (dropdown) -->
+            <label class="block text-lg font-semibold mt-6">Work experience in tech (optional)</label>
+            <select name="experience"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+                <option value="">Number of years</option>
+                <option value="0-1">0–1</option>
+                <option value="1-3">1–3</option>
+                <option value="3-5">3–5</option>
+                <option value="5-10">5–10</option>
+                <option value="10+">over 10 years</option>
+            </select>
+
+            <!-- Storlek på arbetsplats (dropdown) -->
+            <label class="block text-lg font-semibold mt-6">Number of employees at workplace (optional)</label>
+            <select name="company_size"
+                class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400">
+                <option value="">Number of employees</option>
+                <option value="0-10">0–10</option>
+                <option value="10-100">10–100</option>
+                <option value="100-500">100–500</option>
+                <option value="500-1000">500–1000</option>
+                <option value="1000+">Over 1000 employees</option>
+            </select>
+
+            <button type="submit"
+                class="mt-8 w-full bg-red-400 text-white text-lg py-3 rounded-md shadow-lg hover:bg-red-600 transition">
+                Unmute
+            </button>
+        </form>
+    </section>
+
+
+    <!-- Contact Section -->
+    <footer class="text-center bg-gray-800 text-white py-6 mt-16">
+        <p>Contact us at <a href="mailto:unmutiny@gmail.com" class="text-red-400 underline">unmutiny@gmail.com</a>
+        </p>
+        <p>Nolite te bastardes carborundorum</p>
+    </footer>
+
+</body>
+
+</html>
